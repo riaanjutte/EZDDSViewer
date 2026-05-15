@@ -2,6 +2,8 @@
 
 A lightweight Windows desktop app for viewing DDS texture files, built for IL-2 Sturmovik skin modding.
 
+![EZ DDS Viewer screenshot](docs/screenshot.png)
+
 ## Features
 
 ### Opening Files
@@ -70,6 +72,10 @@ The side panel shows at a glance:
 | `1` | Actual size (1:1) |
 | `←` / `→` | Previous / next file in folder (active panel) |
 | Scroll wheel | Zoom in / out |
+
+## Updates
+
+The app checks GitHub for new releases on startup. When an update is available you'll be prompted to download it; you can also trigger a check manually via **Help → Check for Updates…**.
 
 ## Requirements
 
