@@ -1,10 +1,15 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
+import glob, os
+import texture2ddecoder
+_t2d_dir = os.path.dirname(texture2ddecoder.__file__)
+_t2d_binaries = [(p, 'texture2ddecoder') for p in glob.glob(os.path.join(_t2d_dir, '*.pyd'))]
+
 a = Analysis(
     ['main.py'],
     pathex=[],
-    binaries=[('C:/Users/riaan/AppData/Local/Programs/Python/Python314/Lib/site-packages/texture2ddecoder/_texture2ddecoder.pyd', 'texture2ddecoder')],
+    binaries=_t2d_binaries,
     datas=[('icon.ico', '.')],
     hiddenimports=[],
     hookspath=[],
