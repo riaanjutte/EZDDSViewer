@@ -1,0 +1,27 @@
+# Build outputs
+build/
+dist/
+*.spec.bak
+
+# Generated at build time
+build_info.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
